@@ -1,0 +1,79 @@
+.input-container {
+  input {
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bg-panel);
+    box-shadow: var(--shadow-theme);
+    padding: 10px;
+    outline: none;
+    color: var(--text-color);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  input:hover {
+    box-shadow: var(--shadow-theme);
+  }
+  input:focus {
+    box-shadow: var(--shadow-theme), var(--shadow-theme-focus);
+    color: var(--text-color);
+  }
+}
+
+.panel-simple {
+  padding: 5px;
+  align-items: left;
+  background-color: #d7d9d2;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  color: #444;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.neumorphic-select {
+  position: relative;
+  width: 200px;
+  background-color: var(--bg-panel);
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow-theme);
+  overflow: hidden;
+  .selected-option {
+    background-color: lightgray !important;
+  }
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  appearance: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.neumorphic-select::after {
+  content: "\25BC"; /* Unicode character for down arrow */
+  font-size: 20px;
+  color: #555;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.neumorphic-select:hover {
+  box-shadow: var(--shadow-theme);
+}

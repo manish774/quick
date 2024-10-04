@@ -1,0 +1,62 @@
+.skeleton {
+  width: 100%;
+  background: #fff;
+}
+
+.skeleton .description {
+  margin: 0 0;
+}
+
+.description .line {
+  background: #d9d9d9;
+  height: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.description .line {
+  margin: 0px;
+}
+
+.header .img::before,
+.details span::before,
+.description .line::before,
+.btns .btn::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #d9d9d9 0%,
+    rgba(0, 0, 0, 0.05) 20%,
+    #d9d9d9 40%,
+    #d9d9d9 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 450px 400px;
+  animation: shimmer 1s linear infinite;
+}
+
+.header .img::before {
+  background-size: 650px 600px;
+}
+
+.details span::before {
+  animation-delay: 0.2s;
+}
+
+.btns .btn-2::before {
+  animation-delay: 0.22s;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -450px 0;
+  }
+
+  100% {
+    background-position: 450px 0;
+  }
+}
