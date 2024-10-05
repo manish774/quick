@@ -4,7 +4,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
-  "name": "@manish774/smarty-ui",
+  "name": "manish-quick-ui",
   "repository": {
     "type": "git",
     "url": "https://github.com/manish774/quick.git"

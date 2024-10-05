@@ -2,12 +2,16 @@ import React from "react";
 import "./Panel.scss";
 interface PanelProps {
   children: React.ReactElement;
-  style?: React.CSSProperties;
+  title?: React.ReactNode;
+  backgroundColor?: string;
 }
-const Panel = ({ children, style }: PanelProps) => {
+const Panel = ({ children, title }: PanelProps) => {
   return (
-    <section className="panel-section-main" style={style}>
-      {children}
+    <section className="anel-section-main-container">
+      <div className="panel-container">
+        <div className="container-title">{title}</div>
+        <div>{children}</div>
+      </div>
     </section>
   );
 };
