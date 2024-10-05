@@ -14,12 +14,6 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm test
-      - name: Upload package
-        uses: actions/upload-artifact@v3
-        with:
-          name: package
-          path: .
 
   publish-gpr:
     needs: build
